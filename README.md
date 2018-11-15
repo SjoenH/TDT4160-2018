@@ -1,6 +1,6 @@
 # TDT4160-2018
 Hi, and Welcome.
-I hope this is helpful in preparation for the exam. 
+I hope this is helpful in preparation for the exam.
 If you find anything wrong, please do not hesitate in sending a pull-request.
 
 **NB**. Exercise 4,5 and 6 have more throughout explanations in the **.md**-files.
@@ -10,28 +10,9 @@ Henry.
 
 
 # Table of contents
-- [TDT4160-2018](#tdt4160-2018)
-- [Table of contents](#table-of-contents)
 - [Exercise 4](#exercise-4)
-    - [SOLUTION, step by step](#solution-step-by-step)
-    - [Answer](#answer)
 - [Exercise 5](#exercise-5)
-    - [Table of contents](#table-of-contents-1)
-    - [Solution for the hasty](#solution-for-the-hasty)
-    - [The lazymans Quickstart to the instruction set architecture](#the-lazymans-quickstart-to-the-instruction-set-architecture)
-        - [ldi](#ldi)
-        - [mul](#mul)
-        - [sub](#sub)
-        - [cmp](#cmp)
-        - [jgt](#jgt)
-    - [Step by step Exercise solutions](#step-by-step-exercise-solutions)
-        - [If %r0 = 2](#if-r0--2)
-        - [If %r0 = 3](#if-r0--3)
-        - [If %r0 = 4](#if-r0--4)
-        - [If %r0 = 9](#if-r0--9)
 - [Exercise 6](#exercise-6)
-    - [Step by step solution](#step-by-step-solution)
-    - [SOLUTION](#solution)
 
 # Exercise 4
 We are to translate the following instructions into binary code.
@@ -67,7 +48,7 @@ We can see the opcodes listed as...
 
 
 ## SOLUTION, step by step
-| pc   | opcode |       |             |                | 
+| pc   | opcode |       |             |                |
 | ---- | ------ | ----- | ----------- | -------------- |
 | 0x00 | ldi    | %r2   | 1           |                |
 |      | 00000  | 00010 | 00000 00000 | 0000 0000 0001 |
@@ -111,11 +92,8 @@ Hand in a plain text file with the corresponding values per line, i.e. the value
 
 ----
 
-## Table of contents
-- [TDT4160-2018](#tdt4160-2018)
-- [Exercise 4](#exercise-4)
+- [Table of all content](#table-of-contents)
 - [Exercise 5](#exercise-5)
-    - [Table of contents](#table-of-contents)
     - [Solution for the hasty](#solution-for-the-hasty)
     - [The lazymans Quickstart to the instruction set architecture](#the-lazymans-quickstart-to-the-instruction-set-architecture)
         - [ldi](#ldi)
@@ -128,7 +106,6 @@ Hand in a plain text file with the corresponding values per line, i.e. the value
         - [If %r0 = 3](#if-r0--3)
         - [If %r0 = 4](#if-r0--4)
         - [If %r0 = 9](#if-r0--9)
-- [Exercise 6](#exercise-6)
 ----
 ## Solution for the hasty
 ```
@@ -199,7 +176,7 @@ Example
 | ---- | --- | --- | ------------- | ----- | -------------------------------------- |
 | 0x14 | jgt | %r3 | -16           | 0b010 | We will jump. PC = PC+immidiate = 0x04 |
 
-**Quick Explanation** 
+**Quick Explanation**
 The cmp instruction have stored in register 3 that A > B. Therefore we will jump to PC + immidiate = 0x14 + (-)16 = 0x04
 
 **NB.** Note that the PC-Values are written in hexadecimals. Made clear by "0x" preceeding the number.
@@ -343,13 +320,13 @@ Then %r2 = 362880
 
 ----
 
-
 # Exercise 6
 Assume that register %r0 contains 1 before the program is executed. Given the microarchitecture in Section 2 and the control unit’s state machine in Section 3, write down the values of the control unit’s output signals for each executed instruction in the following order: imm, alu, regw, branch.
 
 **Submission**
 Hand in a plain text file with the values for each executed instruction per line.
 
+- [Table of all content](#table-of-contents)
 - [Exercise 6](#exercise-6)
     - [Step by step solution](#step-by-step-solution)
     - [SOLUTION](#solution)
